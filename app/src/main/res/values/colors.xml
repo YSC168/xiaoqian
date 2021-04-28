@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="tab_checked">?attr/colorPrimary</color>
+    <color name="tab_unchecked">#757575</color>
+	<color name="bg">#F2F2F2</color>
+    <color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	
+	<color name="y">?attr/colorPrimary</color>
+	
+
+    <color name="textColor_day">#333333</color>
+    <color name="textColor_night">#aab1b4</color>
+    <color name="desTextColor_day">#767575</color>
+    <color name="desTextColor_night">#8e989c</color>
+    <color name="cardColor_day">#FFFFFF</color>
+    <color name="cardColor_night">#495d66</color>
+    <color name="footerColor_day">#FFFFFF</color>
+    <color name="footerColor_night">#495d66</color>
+    <color name="recyclerColor_day">#EEEEEE</color>
+    <color name="recyclerColor_night">#37474f</color>
+
+
+	<color name="colorPrimary_Purple">#A593DF</color>
+    <color name="colorPrimary_LightGreen">#7ABD9A</color>
+    <color name="colorPrimary_Indigo">#59B7C3</color>
+    <color name="colorPrimary_Blue">#2196F3</color>
+    <color name="colorPrimary_Teal">#89C348</color>
+    <color name="colorPrimary_Green">#4CAF50</color>
+    <color name="colorPrimary_Amber">#FFC925</color>
+    <color name="colorPrimary_Yanzhi">#BF3545</color>
+    <color name="colorPrimary_Pink">#FB7299</color>
+    <color name="colorPrimary_Red">#CE3D3E</color>
+    <color name="colorPrimary_Brown">#795548</color>
+    <color name="colorPrimary_BlueGrey">#CB7575</color>
+
+    <color name="colorPrimaryDark_Purple">#A593DF</color>
+    <color name="colorPrimaryDark_LightGreen">#7ABD9A</color>
+    <color name="colorPrimaryDark_Indigo">#59B7C3</color>
+    <color name="colorPrimaryDark_Blue">#2196F3</color>
+    <color name="colorPrimaryDark_Teal">#89C348</color>
+    <color name="colorPrimaryDark_Green">#4CAF50</color>
+    <color name="colorPrimaryDark_Amber">#FFC925</color>
+    <color name="colorPrimaryDark_Yanzhi">#BF3545</color>
+    <color name="colorPrimaryDark_Pink">#FB7299</color>
+    <color name="colorPrimaryDark_Red">#CE3D3E</color>
+    <color name="colorPrimaryDark_Brown">#795548</color>
+    <color name="colorPrimaryDark_BlueGrey">#CB7575</color>
+
+    <color name="colorAccent_Purple">#A593DF</color>
+    <color name="colorAccent_LightGreen">#7ABD9A</color>
+    <color name="colorAccent_Indigo">#59B7C3</color>
+    <color name="colorAccent_Blue">#2196F3</color>
+    <color name="colorAccent_Teal">#89C348</color>
+    <color name="colorAccent_Green">#4CAF50</color>
+    <color name="colorAccent_Amber">#FFC925</color>
+    <color name="colorAccent_Yanzhi">#BF3545</color>
+    <color name="colorAccent_Pink">#FB7299</color>
+    <color name="colorAccent_BlueGrey">#CB7575</color>
+	<color name="colorAccent_Brown">#795548</color>
+	<color name="colorAccent_Red">#CE3D3E</color>
+	
+	
+	
+    <color name="whiteLow">#f0f0f0</color>
+    <color name="highlightWhite">#55FFFFFF</color>
+    <color name="highlightBlack">#1e000000</color>
+    <color name="colorBackground">#fafafa</color>
+	<color name="colorTextDark">#424242</color>
+    <color name="colorTextDark2nd">#757575</color>
+	<color name="line">#e0e0e0</color>
+</resources>

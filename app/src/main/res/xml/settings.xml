@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="设置">
+
+        <SwitchPreference
+            android:title="设置开关" 
+			android:key="main"
+			android:summary=""/>
+
+		<net.margaritov.preference.colorpicker.ColorPickerPreference 
+			android:key="color2"
+			android:title="@string/color2_title" 
+			android:summary="@string/color2_summary"
+			android:defaultValue="?attr/colorPrimary"/>
+
+
+		<Preference android:title="语言"
+			android:dependency="main"	>
+            <intent android:action="android.settings.LOCALE_SETTINGS" />
+        </Preference>
+		<Preference android:title="显示"
+			android:dependency="main">
+			<intent android:action="android.settings.DISPLAY_SETTINGS" />
+        </Preference>
+		<Preference android:title="声音"
+			android:dependency="main"		>
+            <intent android:action="android.settings.SOUND_SETTINGS" />
+        </Preference>
+		<RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:dependency="main"
+            android:key="ringtone"
+            android:ringtoneType="notification"
+            android:title="铃声" />
+	</PreferenceCategory>
+
+
+	<Preference android:title="关于手机"
+		android:dependency="main"		>
+		<intent android:action="android.settings.DEVICE_INFO_SETTINGS" />
+	</Preference>
+	<Preference android:title="辅助功能"
+		android:dependency="main"		>
+		<intent android:action="android.settings.ACCESSIBILITY_SETTINGS" />
+	</Preference>
+	<Preference android:title="开发者选项"
+		android:dependency="main"	>
+		<intent android:action="android.settings.APPLICATION_DEVELOPMENT_SETTINGS" />
+	</Preference>
+	<PreferenceCategory android:title="其他">
+
+		<Preference
+
+            android:summary="图片"
+            android:title="跳转" >
+			<intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.oq.app.GlideTest"
+                android:targetPackage="com.oq.app" />
+
+		</Preference>
+		<CheckBoxPreference
+
+            android:defaultValue="false"
+            android:key="AutoCheckUpdate"
+            android:summary="4"
+            android:title="3" />
+
+		<Preference
+
+            android:summary=""
+            android:title="YSC" >
+		</Preference>
+		<EditTextPreference
+			android:key="text"
+			android:dependency="main"
+			android:title="文本存档"
+			android:summary=""
+			android:maxLines="1"
+			android:capitalize="words"
+			android:singleLine="true"
+			android:selectAllOnFocus="true"
+			android:dialogTitle="内容"/>
+
+        <MultiSelectListPreference
+			android:dependency="main"
+            android:dialogTitle="多选框"
+            android:entries="@array/settings_multi_select_list_preference_titles"
+            android:entryValues="@array/settings_multi_select_list_preference_values"
+            android:key="multi_select_list"
+            android:title="多选框" />
+
+		<ListPreference
+			android:dependency="main"
+            android:defaultValue="60"
+            android:dialogTitle="单选框"
+            android:entries="@array/settings_list_preference_titles"
+            android:entryValues="@array/settings_list_preference_values"
+            android:key="sync_frequency"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="单选框" />
+
+
+	</PreferenceCategory>
+
+</PreferenceScreen>
+

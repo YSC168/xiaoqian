@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:layout_gravity="top|center">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="top|center"
+		android:orientation="vertical">
+
+		<android.support.v7.widget.CardView
+			xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:layout_margin="16dp"
+			android:focusable="true"
+			android:clickable="true"
+			android:foreground="?android:attr/selectableItemBackground"
+			card_view:cardElevation="4dp"
+			android:id="@+id/cv">
+
+			<ImageView
+				android:layout_width="72dp"
+				android:layout_height="72dp"
+				android:src="@mipmap/ic_launcher"/>
+
+		</android.support.v7.widget.CardView>
+
+		<android.support.v7.widget.CardView
+			xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="16dp"
+			android:focusable="true"
+			android:clickable="true"
+			android:foreground="?android:attr/selectableItemBackground"
+			card_view:cardElevation="4dp"
+			android:id="@+id/bg"
+			android:elevation="10dp">
+
+			<ImageView
+				android:layout_width="72dp"
+				android:layout_height="72dp"
+				android:background="#FF6699"/>
+
+		</android.support.v7.widget.CardView>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<ImageView
+			android:layout_width="72dp"
+			android:layout_height="72dp"
+			android:src="@drawable/ku"
+			android:layout_gravity="bottom|right"
+			android:layout_marginTop="10dp"/>
+
+		<ImageView
+			android:src="@drawable/heart"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/yyyImageView1"
+			android:layout_alignParentRight="true"
+			android:layout_margin="8dp"/>
+
+		<webview
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/webview">
+
+		</webview>
+
+		<ImageView
+			android:layout_width="72dp"
+			android:layout_height="72dp"
+			android:src="@mipmap/ic_launcher"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:layout_marginRight="16dp"
+			android:layout_marginLeft="16dp"
+			android:layout_gravity="right">
+
+			<Switch
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="闪光灯"
+				android:id="@+id/fl"
+				android:gravity="left|center_vertical"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="16dp"/>
+
+			<Switch
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="闪烁灯"
+				android:id="@+id/fll"
+				android:gravity="right|center_vertical"
+				android:layout_marginRight="16dp"
+				android:layout_marginLeft="10dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:gravity="center_vertical"
+			android:layout_gravity="center_vertical"
+			android:id="@+id/reload"
+			android:orientation="horizontal">
+
+			<WebView
+				android:id="@+id/webView"
+				android:scrollbars="none"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center"
+				android:layout_weight="1.0"/>
+
+			<ImageView
+				android:layout_width="72dp"
+				android:layout_height="72dp"
+				android:layout_marginRight="16dp"
+				android:src="@mipmap/ic_launcher"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Medium Text"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:typeface="sans"
+			android:ellipsize="middle"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:text="1、每天做的事，都记录下来。    一方面是督促自己珍惜时间，另一方面是可以系统、可视化的分析自己的时间分配情况。    2、多阅读一些经典的技术书籍、优秀的项目代码案例。    多学习优秀的事物，取长补短，更快的提升自己。    3、实现自己的一个开源库。    优秀的程序员不仅仅会用轮子，还要学会自己造轮子。    4、好好做公众号，确定定位，写出更多有质量的原创文章。    写作文笔好的人，对事物的分析能力一定很不错。    5、拒绝仓鼠症    仓鼠症就是喜欢囤积各种东西，但是不去“消化”。我个人有一个坏毛病，喜欢收藏文章、教学课程到“稍后阅读”，但是一般就没有稍后了。新的一年，积极的改变自我，及时的消化优质的知识。"
+		android:id="@+id/text"/>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<Button
+			android:layout_width="wrap_content"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_height="wrap_content"
+			android:text="Small Button"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

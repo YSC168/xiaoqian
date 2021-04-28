@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/one"
+            android:icon="@drawable/one"
+            android:title="一日" />
+        <item
+            android:id="@+id/two"
+            android:icon="@drawable/two"
+            android:title="二人" />
+        <item
+            android:id="@+id/three"
+            android:icon="@drawable/three"
+            android:title="三餐" />
+        <item
+            android:id="@+id/four"
+            android:icon="@drawable/four"
+            android:title="四季" />
+    </group>
+
+    <item android:title="其他">
+        <menu>
+			<item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_set"
+                android:title="设置" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/colorpick"
+                android:title="主题" />
+        </menu>
+    </item>
+
+</menu>

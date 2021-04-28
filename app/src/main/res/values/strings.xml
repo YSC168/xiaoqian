@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">🦄憨憨</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+	<string name="info">1、每天做的事，都记录下来。
+
+		一方面是督促自己珍惜时间，另一方面是可以系统、可视化的分析自己的时间分配情况。
+
+		2、多阅读一些经典的技术书籍、优秀的项目代码案例。
+
+		多学习优秀的事物，取长补短，更快的提升自己。
+
+		3、实现自己的一个开源库。
+
+		优秀的程序员不仅仅会用轮子，还要学会自己造轮子。
+
+		4、好好做公众号，确定定位，写出更多有质量的原创文章。
+
+		写作文笔好的人，对事物的分析能力一定很不错。
+
+		5、拒绝仓鼠症
+
+		仓鼠症就是喜欢囤积各种东西，但是不去“消化”。我个人有一个坏毛病，喜欢收藏文章、教学课程到“稍后阅读”，但是一般就没有稍后了。新的一年，积极的改变自我，及时的消化优质的知识。</string>
+    <string name="action_settings">设置</string>
+	<string name="sjapp">应用</string>
+	<string name="browser">浏览器</string>
+	
+	<!-- Color Picker -->
+    <string name="dialog_color_picker">颜色选择器</string>
+    <string name="press_color_to_apply">选择颜色以更改</string>
+
+	<string name="pref_ringtone_silent">静音</string>
+
+    <!-- Preferences -->
+    <string name="pref_category">Category</string>
+    <string name="color1_title">Color 1</string>
+    <string name="color1_summary">black color by default, set by reference</string>
+    <string name="color2_title">PS画板</string>
+    <string name="color2_summary">可输入HEX值查看颜色</string>
+    <string name="color3_title">Color 3</string>
+    <string name="color3_summary">picker with alpha slider</string>
+    <string name="color4_title">Color 4</string>
+    <string name="color4_summary">color set with HEX code in xml</string>
+	<string name="set_short_name">浏览器</string>
+	<string name="set_long_name">浏览器</string>
+	<string name="set_disable_msg">不可用</string>
+</resources>

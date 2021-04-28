@@ -1,0 +1,21 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="setting"
+        android:enabled="true"
+        android:icon="@drawable/browser"
+        android:shortcutShortLabel="@string/set_short_name"
+        android:shortcutLongLabel="@string/set_long_name"
+        android:shortcutDisabledMessage="@string/set_disable_msg">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.oq.app"
+            android:targetClass="com.oq.app.Browser" />
+        <categories android:name="android.shortcut.conversation"/>
+
+    </shortcut>
+	
+	
+</shortcuts>
+
+

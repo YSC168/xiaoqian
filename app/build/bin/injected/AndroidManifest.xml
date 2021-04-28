@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.oq.app"
+	android:versionCode="1"
+	android:versionName="1.0">
+
+	<uses-sdk
+		android:minSdkVersion="16"
+		android:targetSdkVersion="24"/>
+
+	<uses-permission
+		android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+	<uses-permission
+		android:name="android.permission.INTERNET"/>
+
+	<uses-permission
+		android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+	<uses-permission
+		android:name="android.permission.READ_PHONE_STATE"/>
+
+	<uses-permission
+		android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+
+	<uses-permission
+		android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+
+	<uses-permission
+		android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+
+	<uses-permission
+		android:name="com.android.launcher.permission.READ_SETTINGS"/>
+
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme_Default">
+
+		<activity
+			android:name=".Splash"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+			android:hardwareAccelerated="true"
+			android:alwaysRetainTaskState="true"
+			android:theme="@style/AppTheme.NoActionBar">
+
+			<intent-filter>
+
+				<action
+					android:name="android.intent.action.MAIN"/>
+
+				<category
+					android:name="android.intent.category.LAUNCHER"/>
+
+			</intent-filter>
+
+			<meta-data
+				android:name="android.app.shortcuts"
+				android:resource="@xml/shortcut"/>
+
+			<meta-data
+				android:name="android.app.shortcuts"
+				android:resource="@xml/shortcut"/>
+
+		</activity>
+
+		<provider
+			android:name="android.support.v4.content.FileProvider"
+			android:authorities="com.oq.app.fileprovider"
+			android:exported="false"
+			android:grantUriPermissions="true">
+
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/file_paths"/>
+
+		</provider>
+
+		<activity
+			android:name=".Browser"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="adjustPan"
+			android:configChanges="keyboardHidden|orientation|screenSize|locale">
+
+			<intent-filter
+				android:autoVerify="true">
+
+				<action
+					android:name="android.intent.action.VIEW"/>
+
+				<category
+					android:name="android.intent.category.DEFAULT"/>
+
+				<category
+					android:name="android.intent.category.BROWSABLE"/>
+
+				<category
+					android:name="android.intent.category.APP_BROWSER"/>
+
+				<data
+					android:scheme="http"/>
+
+				<data
+					android:scheme="https"/>
+
+				<data
+					android:scheme="about"/>
+
+				<data
+					android:scheme="javascript"/>
+
+				<data
+					android:scheme="file"/>
+
+			</intent-filter>
+
+			<intent-filter
+				android:autoVerify="true">
+
+				<action
+					android:name="android.intent.action.VIEW"/>
+
+				<category
+					android:name="android.intent.category.DEFAULT"/>
+
+				<category
+					android:name="android.intent.category.BROWSABLE"/>
+
+				<data
+					android:scheme="file"/>
+
+				<data
+					android:scheme="content"/>
+
+				<data
+					android:mimeType="text/html"/>
+
+				<data
+					android:mimeType="text/markdown"/>
+
+				<data
+					android:mimeType="text/mht"/>
+
+				<data
+					android:mimeType="text/mhtml"/>
+
+				<data
+					android:mimeType="text/plain"/>
+
+				<data
+					android:mimeType="application/xhtml+xml"/>
+
+				<data
+					android:mimeType="application/vnd.wap.xhtml+xml"/>
+
+			</intent-filter>
+
+			<intent-filter
+				android:autoVerify="true">
+
+				<action
+					android:name="android.intent.action.VIEW"/>
+
+				<category
+					android:name="android.intent.category.DEFAULT"/>
+
+				<category
+					android:name="android.intent.category.BROWSABLE"/>
+
+				<data
+					android:scheme="http"/>
+
+				<data
+					android:scheme="https"/>
+
+				<data
+					android:scheme="about"/>
+
+				<data
+					android:scheme="javascript"/>
+
+				<data
+					android:scheme="file"/>
+
+				<data
+					android:scheme="inline"/>
+
+				<data
+					android:scheme="content"/>
+
+				<data
+					android:scheme="zhihu">
+
+					<action
+						android:name="android.intent.action.VIEW"/>
+
+					<category
+						android:name="android.intent.category.DEFAULT"/>
+
+					<category
+						android:name="android.intent.category.BROWSABLE"/>
+
+				</data>
+
+			</intent-filter>
+
+		</activity>
+
+		<activity
+			android:name=".DrawIcosahedron">
+
+		</activity>
+
+		<activity
+			android:name=".MainActivity"
+			android:label="@string/app_name"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:hardwareAccelerated="true"
+			android:excludeFromRecents="true"
+			android:configChanges="keyboardHidden|orientation|screenSize">
+
+		</activity>
+
+		<activity
+			android:name=".Screenclock"
+			android:screenOrientation="landscape"
+			android:launchMode="singleTask"
+			android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+		<activity
+			android:name=".Img"
+			android:launchMode="singleTask"
+			android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+		<activity
+			android:name=".ApActivity"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+		<activity
+			android:name=".GlideTest"
+			android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+		<activity
+			android:name=".TTTT"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:label="设置"
+			android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+		<activity
+			android:name=".Poly"
+			android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+		<activity
+			android:name=".Kongjian"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:hardwareAccelerated="true"
+			android:windowSoftInputMode="adjustPan"
+			android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+	</application>
+
+</manifest>
+

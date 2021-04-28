@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="bottom">
+
+	<ProgressBar
+		android:id="@+id/web_progressBar"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp_2"
+		android:layout_gravity="center"
+		android:paddingTop="0dp"
+		android:visibility="visible"/>
+
+	<com.oq.app.NestedWebView
+		android:layout_weight="1.0"
+		android:layout_width="match_parent"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		android:layout_height="match_parent"
+		android:id="@+id/webview">
+
+	</com.oq.app.NestedWebView>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:id="@+id/text"
+		android:visibility="gone"/>
+
+	<LinearLayout
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dp_42"
+		android:gravity="center"
+		android:id="@+id/layout"
+		android:background="@color/bg">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:id="@+id/back"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="&lt;"
+			android:gravity="right|center"
+			android:textColor="?attr/colorPrimary"
+			android:paddingRight="@dimen/dp_30"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:id="@+id/refresh"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="o"
+			android:gravity="center"
+			android:textColor="?attr/colorPrimary"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:id="@+id/forward"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="&gt;"
+			android:gravity="left|center"
+			android:textColor="?attr/colorPrimary"
+			android:paddingLeft="@dimen/dp_30"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
